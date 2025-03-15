@@ -225,7 +225,7 @@ button {
 button:hover {
     background: #2980b9;
 }
-
+ 
 .progress-bar div {
     width: 0;
     animation: fillProgress 3s ease-in-out forwards;

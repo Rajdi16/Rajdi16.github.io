@@ -1,3 +1,9 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    overflow-x: hidden;
+}
 
 .container {
     display: flex;
@@ -7,11 +13,12 @@
 
 .cv {
     display: flex;
-    width: 800px;
+    width: 850px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    flex-direction: row;
 }
 
 .left {
@@ -79,13 +86,6 @@ h3 {
     overflow: hidden;
     margin: 5px 0;
 }
-
-.progress-bar div {
-    height: 8px;
-    background-color: #3498db;
-    width: 70%;
-}
-
 
 .particles {
     position: absolute;
@@ -190,4 +190,111 @@ h3 {
 .particles span:nth-child(17) {
     left: 20%;
     animation-duration: 20s;
+}
+
+.controls {
+    text-align: right;
+    margin: 20px;
+    padding-right: 20px;
+}
+
+.language-switcher {
+    position: relative;
+}
+
+.button-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+.progress-bar div {
+    width: 0;
+    animation: fillProgress 3s ease-in-out forwards;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    height: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.progress-bar div {
+    height: 100%;
+    background-color: #4CAF50;
+    transition: width 0.5s ease-in-out;
+}
+
+.cv {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fillProgress {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(100vh) translateX(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100vh) translateX(50vw);
+        opacity: 0;
+    }
+}
+
+#cv-en {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .cv {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
 }

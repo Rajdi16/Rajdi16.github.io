@@ -1,45 +1,25 @@
 <!DOCTYPE html>
 <html lang="fr">
-<link rel="stylesheet" href="style.css">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV de RAJDI MUCANJI</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            color: #333;
-            background: linear-gradient(135deg, #2c3e50, #3498db);
-            overflow-x: hidden;
-        }
-
-        @keyframes float {
-            0% {
-                transform: translateY(100vh) translateX(0);
-                opacity: 0;
-            }
-
-            50% {
-                opacity: 1;
-            }
-
-            100% {
-                transform: translateY(-100vh) translateX(50vw);
-                opacity: 0;
-            }
-        }
     </style>
 </head>
 
 <body>
 
+    <div class="language-switcher">
+        <button id="toggle-language">Switch to <span id="current-language">English</span></button>
+    </div>
     <div class="particles">
         <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
         <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
@@ -47,116 +27,242 @@
         <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
     </div>
 
-    <div class="container">
-        <div class="cv">
-            <div class="left">
-                <img src="profil_pic.jpg" alt="Profile Image">
+    <div id="cv-fr" class="french">
+        <div class="container">
+            <div class="cv">
+                <div class="left">
+                    <img src="profil_pic.jpg" alt="Profile Image">
 
-                <h3>Profile</h3>
-                <div class="left-section">
-                    <p>🎂 <span id="age"></span> ans</p>
-                    <p>🎓 Étudiant en BTS SIO</p>
-                </div>
-                <h3>Contact</h3>
-                <div class="left-section">
-                    <p>📞 07 80 64 34 12</p>
-                    <p>✉️ rajdimucanji16@gmail.com</p>
-                    <p>📍 54220 Malzéville</p>
-                </div>
-                <h3>Languages Étranger</h3>
-                <div class="left-section">
-                    <p>Langue Anglais</p>
-                    <div class="progress-bar">
-                        <div style="width: 85%;"></div>
+                    <h3>Profile</h3>
+                    <div class="left-section">
+                        <p>🎂 <span id="age"></span> ans</p>
+                        <p>🎓 Étudiant en BTS SIO</p>
                     </div>
-                    <p>Langue Albanais</p>
-                    <div class="progress-bar">
-                        <div style="width: 95%;"></div>
+                    <h3>Contact</h3>
+                    <div class="left-section">
+                        <p>📞 07 80 64 34 12</p>
+                        <p>✉️ rajdimucanji16@gmail.com</p>
+                        <p>📍 54220 Malzéville</p>
                     </div>
-                    <p>Langue Grec</p>
-                    <div class="progress-bar">
-                        <div style="width: 13%;"></div>
+                    <h3>Langues Étrangères</h3>
+                    <div class="left-section">
+                        <p>Langue Anglais</p>
+                        <div class="progress-bar">
+                            <div style="width: 85%;"></div>
+                        </div>
+                        <p>Langue Albanais</p>
+                        <div class="progress-bar">
+                            <div style="width: 95%;"></div>
+                        </div>
+                        <p>Langue Grec</p>
+                        <div class="progress-bar">
+                            <div style="width: 13%;"></div>
+                        </div>
+                    </div>
+                    <h3>Compétences</h3>
+                    <div>
+                        <p>💡 Résolution de problèmes</p>
+                        <p>💪 Travail d’équipe</p>
+                        <p>🚀 Curiosité et apprentissage</p>
+                        <p>⏳ Gestion du temps</p>
+                        <p>🧘 Adaptabilité</p>
+                        <p>📢 Communication</p>
+                        <p>✨ Créativité</p>
                     </div>
                 </div>
-                <h3>Compétences</h3>
-                <p>💡 Résolution de problèmes</p>
-                <p>💪 Travail d’équipe</p>
-                <p>🚀 Curiosité et apprentissage continu</p>
-                <p>⏳ Gestion du temps</p>
-                <p>🧘 Adaptabilité</p>
-                <p>📢 Communication</p>
-                <p>✨ Créativité</p>
+                <div class="right">
+                    <h2>Rajdi MUCANJI</h2>
 
+                    <h3>Formation</h3>
+
+                    <p><strong>BTS SIO</strong> | 2024 – présent</p>
+                    <p>Le BTS SIO (Services Informatiques aux Organisations)
+                        forme en deux ans à la gestion des systèmes
+                        informatiques, des réseaux et au développement
+                        d'applications. Je suis spécialisé dans la filière SLAM (Solutions Logicielles et
+                        Applications
+                        Métier), où j’apprends à concevoir, développer et maintenir des applications informatiques
+                        adaptées
+                        aux besoins des entreprises. Je travaille principalement sur des langages comme JavaScript,
+                        PHP
+                        et
+                        Java ainsi que sur les bases de données et la gestion des systèmes d’information.</p>
+
+                    <p><strong>Bac Pro Systèmes Numériques</strong> | 2021 –
+                        2024</p>
+                    <p>Le Bac Pro Systèmes Numériques est une formation
+                        professionnelle de trois ans qui prépare les élèves
+                        à intervenir dans les domaines des réseaux
+                        informatiques, des télécommunications et des objets
+                        connectés. Elle offre des compétences techniques pour
+                        installer, configurer et dépanner des systèmes
+                        numériques utilisés dans divers secteurs industriels et
+                        tertiaires.</p>
+
+                    <h3>Expériences</h3>
+
+                    <p><strong>Stage de lycée</strong> | 2021 – 2023</p>
+                    <p>9 semaines - Mobil Luxembourg - développement d'application
+                        portable en Dart et Flutter</p>
+                    <p></p>
+                    <p><strong>Applications développées</strong></p>
+                    <p><strong>Lecteur de musique :</strong> J’ai conçu et développé l’interface utilisateur de
+                        cette
+                        application permettant aux utilisateurs de lire leurs fichiers audio stockés sur leur
+                        téléphone.
+                        L'application prend en charge différents formats audio et offre une navigation intuitive
+                        avec
+                        des
+                        fonctionnalités comme la gestion des playlists et la lecture en arrière-plan.</p>
+                    <p><strong>Wallpaper Changer :</strong> Cette application permet de modifier automatiquement le
+                        fond
+                        d’écran d’un appareil mobile à intervalles définis. J’ai intégré une gestion dynamique des
+                        images,
+                        permettant aux utilisateurs de choisir des images locales ou d’accéder à une bibliothèque en
+                        ligne
+                        pour une personnalisation avancée.</p>
+
+                    <p><strong>Stage de lycée</strong> | 2022 – 2024</p>
+                    <p>11 semaines - <a href="https://www.evopc.fr">Evo PC Nancy</a> - Vente de matériel
+                        informatique, assemblage de PC, dépannage et
+                        assistance à distance.</p>
+                    <p><strong>Voici mes activités :</strong> J'ai participé à la vente d'ordinateurs, de composants
+                        et
+                        d’accessoires informatiques, tout en conseillant les clients sur le matériel le plus adapté
+                        à
+                        leurs
+                        besoins. J’ai également contribué à l’assemblage de PC sur mesure, aussi bien pour le gaming
+                        que
+                        pour la bureautique. Mon rôle comprenait aussi le diagnostic et la réparation de matériel
+                        informatique, ainsi que l’installation et l’optimisation des systèmes et logiciels.</p>
+
+                    <h3>Objectif Professionnel</h3>
+                    <p>En tant que développeur, mon objectif est de
+                        perfectionner mes compétences techniques en
+                        travaillant
+                        sur des projets innovants et stimulants. Je vise à
+                        acquérir une expertise solide dans le développement
+                        d'applications et à contribuer à des initiatives
+                        open-source, ce qui me permettra de renforcer mon
+                        portfolio et d'évoluer dans ma carrière.</p>
+
+                    <h3>Objectif Personnel</h3>
+                    <p>Sur le plan personnel, je souhaite avoir la
+                        possibilité
+                        de voyager pour explorer différentes cultures et
+                        découvrir de nouveaux lieux. Ces expériences
+                        enrichissantes me permettront d'élargir ma
+                        perspective et d'inspirer ma créativité, tant dans ma vie
+                        professionnelle que personnelle.</p>
+                </div>
             </div>
-            <div class="right">
-                <h2>Rajdi MUCANJI</h2>
+        </div>
+    </div>
 
-                <h3>Formation</h3>
+    <div id="cv-en" class="english">
+        <div class="container">
+            <div class="cv">
+                <div class="left">
+                    <img src="profil_pic.jpg" alt="Profile Image">
 
-                <p><strong>BTS SIO</strong> | 2024 – présent</p>
-                <p>Le BTS SIO (Services Informatiques aux Organisations)
-                    forme en deux ans à la gestion des systèmes
-                    informatiques, des réseaux et au développement
-                    d'applications. Je suis spécialisé dans la filière SLAM (Solutions Logicielles et Applications
-                    Métier), où j’apprends à concevoir, développer et maintenir des applications informatiques adaptées
-                    aux besoins des entreprises. Je travaille principalement sur des langages comme JavaScript, PHP et
-                    Java ainsi que sur les bases de données et la gestion des systèmes d’information.</p>
+                    <h3>Profile</h3>
+                    <div class="left-section">
+                        <p>🎂 <span id="age"></span>21 years old</p>
+                        <p>🎓 Student in BTS SIO</p>
+                    </div>
+                    <h3>Contact</h3>
+                    <div class="left-section">
+                        <p>📞 07 80 64 34 12</p>
+                        <p>✉️ rajdimucanji16@gmail.com</p>
+                        <p>📍 54220 Malzéville</p>
+                    </div>
+                    <h3>Foreign Languages</h3>
+                    <div class="left-section">
 
-                <p><strong>Bac Pro Systèmes Numériques</strong> | 2021 –
-                    2024</p>
-                <p>Le Bac Pro Systèmes Numériques est une formation
-                    professionnelle de trois ans qui prépare les élèves
-                    à intervenir dans les domaines des réseaux
-                    informatiques, des télécommunications et des objets
-                    connectés. Elle offre des compétences techniques pour
-                    installer, configurer et dépanner des systèmes
-                    numériques utilisés dans divers secteurs industriels et
-                    tertiaires.</p>
+                        <p>Langue Albanais</p>
+                        <div class="progress-bar">
+                            <div style="width: 95%;"></div>
+                        </div>
+                        <p>Langue Francais</p>
+                        <div class="progress-bar">
+                            <div style="width: 80%;"></div>
+                        </div>
+                        <p>Langue Grec</p>
+                        <div class="progress-bar">
+                            <div style="width: 13%;"></div>
+                        </div>
 
-                <h3>Expériences</h3>
+                        <h3>Skills</h3>
+                        <p>💡 Problem-solving</p>
+                        <p>💪 Teamwork</p>
+                        <p>🚀 Curiosity and continuous learning</p>
+                        <p>⏳ Time management</p>
+                        <p>🧘 Adaptability</p>
+                        <p>📢 Communication</p>
+                        <p>✨ Creativity</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <h2>Rajdi MUCANJI</h2>
 
-                <p><strong>Stage de lycée</strong> | 2021 – 2023</p>
-                <p>9 semaines - Mobil Luxembourg - développement d'application
-                    portable en Dart et Flutter</p>
-                <p></p>
-                <p><strong>Applications développées</strong></p>
-                <p><strong>Lecteur de musique :</strong> J’ai conçu et développé l’interface utilisateur de cette
-                    application permettant aux utilisateurs de lire leurs fichiers audio stockés sur leur téléphone.
-                    L'application prend en charge différents formats audio et offre une navigation intuitive avec des
-                    fonctionnalités comme la gestion des playlists et la lecture en arrière-plan.</p>
-                <p><strong>Wallpaper Changer :</strong> Cette application permet de modifier automatiquement le fond
-                    d’écran d’un appareil mobile à intervalles définis. J’ai intégré une gestion dynamique des images,
-                    permettant aux utilisateurs de choisir des images locales ou d’accéder à une bibliothèque en ligne
-                    pour une personnalisation avancée.</p>
+                    <h3>Education</h3>
 
-                <p><strong>Stage de lycée</strong> | 2022 – 2024</p>
-                <p>11 semaines - <a href="https://www.evopc.fr">Evo PC Nancy</a> - Vente de matériel
-                    informatique, assemblage de PC, dépannage et
-                    assistance à distance.</p>
-                <p><strong>Voici mes activités :</strong> J'ai participé à la vente d'ordinateurs, de composants et
-                    d’accessoires informatiques, tout en conseillant les clients sur le matériel le plus adapté à leurs
-                    besoins. J’ai également contribué à l’assemblage de PC sur mesure, aussi bien pour le gaming que
-                    pour la bureautique. Mon rôle comprenait aussi le diagnostic et la réparation de matériel
-                    informatique, ainsi que l’installation et l’optimisation des systèmes et logiciels.</p>
+                    <p><strong>BTS SIO</strong> | 2024 – present</p>
+                    <p>The BTS SIO (Services Informatiques aux Organisations) is a two-year program focused on
+                        managing IT systems, networks, and application development. I specialize in the SLAM
+                        (Software Solutions and Business Applications) track, where I learn to design, develop,
+                        and maintain software applications tailored to business needs. My work primarily
+                        involves programming languages such as JavaScript, PHP, and Java, as well as databases
+                        and information system management.</p>
 
-                <h3>Objectif Professionnel</h3>
-                <p>En tant que développeur, mon objectif est de
-                    perfectionner mes compétences techniques en
-                    travaillant
-                    sur des projets innovants et stimulants. Je vise à
-                    acquérir une expertise solide dans le développement
-                    d'applications et à contribuer à des initiatives
-                    open-source, ce qui me permettra de renforcer mon
-                    portfolio et d'évoluer dans ma carrière.</p>
+                    <p><strong>Professional Baccalaureate in Digital Systems</strong> | 2021 – 2024</p>
 
-                <h3>Objectif Personnel</h3>
-                <p>Sur le plan personnel, je souhaite avoir la
-                    possibilité
-                    de voyager pour explorer différentes cultures et
-                    découvrir de nouveaux lieux. Ces expériences
-                    enrichissantes me permettront d'élargir ma
-                    perspective et d'inspirer ma créativité, tant dans ma vie
-                    professionnelle que personnelle.</p>
+                    <p>The "Bac Pro Systèmes Numériques" is a three-year vocational training program that
+                        prepares students to work in the fields of "IT networks, telecommunications, and
+                        connected devices". It provides technical skills to "install, configure, and
+                        troubleshoot digital systems" used in various industrial and service sectors.</p>
+
+                    <h3>Experiences</h3>
+
+                    <p><strong>High School Internship </strong> | 2021 – 2023</p>
+                    <p>9 weeks - Mobil Luxembourg - Development of mobile applications using Dart and Flutter</p>
+                    <p><strong>Developed Applications</strong></p>
+
+                    <p><strong>Music Player :</strong> I designed and developed the user interface of this
+                        application, allowing users to play their audio files stored on their phone. The
+                        application supports various audio formats and offers an intuitive navigation system
+                        with features such as playlist management and background playback.</p>
+
+                    <p><strong>Wallpaper Changer :</strong>
+                        This application automatically changes a mobile
+                        device's wallpaper at defined intervals. I integrated a dynamic image management system,
+                        enabling users to select local images or access an online library for advanced
+                        customization.</p>
+
+                    <h3>High School Internship | 2022 – 2024</h3>
+
+                    11 weeks - <a href="http://www.evopc.fr">Evo PC Nancy </a> - Computer hardware sales, PC
+                    assembly,
+                    troubleshooting, and remote assistance.
+
+                    <h3>My activities</h3>
+                    <p> I participated in selling computers, components, and accessories while advising customers on
+                        the most suitable hardware for their needs. I also contributed to assembling custom PCs,
+                        both for gaming and office use. My role included diagnosing and repairing computer hardware,
+                        as well as installing and optimizing systems and software.
+                    </p>
+                    <h3> Professional Objective</h3>
+                    <p> As a developer, my goal is to refine my technical skills by working on innovative and
+                        challenging projects. I aim to gain solid expertise in application development and
+                        contribute to open-source initiatives, which will help me strengthen my portfolio and
+                        advance in my career.</p>
+
+                    <h3> Personal Objective</h3>
+                    <p> On a personal level, I aspire to travel and explore different cultures and places. These
+                        enriching experiences will broaden my perspective and inspire my creativity, both in my
+                        professional and personal life.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -176,8 +282,35 @@
         return age;
     }
 
-    const birthDate = new Date("2003-05-31");
-    document.getElementById("age").textContent = calculateAge(birthDate);
+    window.onload = function () {
+        const birthDate = new Date("2003-05"); // Ensure full date format
+        const ageElement = document.getElementById("age");
+
+        if (ageElement) {
+            ageElement.textContent = calculateAge(birthDate);
+        } else {
+            console.error("Element with ID 'age' not found.");
+        }
+    };
+
+    document.getElementById("toggle-language").addEventListener("click", function () {
+        var cvFr = document.getElementById("cv-fr");
+        var cvEn = document.getElementById("cv-en");
+
+        if (cvEn.style.display === "none") {
+            cvEn.style.display = "block";
+            cvFr.style.display = "none";
+            this.textContent = "Passer au Français";
+        } else {
+            cvEn.style.display = "none";
+            cvFr.style.display = "block";
+            this.textContent = "Switch to English";
+        }
+    });
+
+
+
+
 </script>
 
 </html>

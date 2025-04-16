@@ -218,7 +218,7 @@ button {
 button:hover {
     background: #2980b9;
 }
- 
+
 .progress-bar div {
     width: 0;
     animation: fillProgress 3s ease-in-out forwards;
@@ -289,5 +289,30 @@ button:hover {
     .left,
     .right {
         width: 100%;
+    }
+}
+
+.github-link a {
+    text-decoration: none;
+    color: #3498db;
+    display: inline-block;
+    position: relative;
+    animation: pulse 1.5s infinite;
+    transition: color 0.3s ease;
+}
+
+.github-link a:hover {
+    color: #e74c3c;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
     }
 }

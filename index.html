@@ -4,339 +4,1036 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV de RAJDI MUCANJI</title>
+    <title>CV de Rajdi MUCANJI | Développeur Web & Logiciel - Titulaire BTS SIO SLAM</title>
+    <meta name="description"
+        content="CV de Rajdi MUCANJI - Titulaire du BTS SIO option SLAM (2024-2026), Développeur Web & Logiciel Junior à la recherche d'un CDI / CDD.">
     <link rel="stylesheet" href="style.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            color: #333;
-            background: linear-gradient(135deg, #2c3e50, #3498db);
-            overflow-x: hidden;
-        }
-    </style>
 </head>
 
 <body>
 
-    <div class="language-switcher">
-        <button id="toggle-language">Switch to <span id="current-language">English</span></button>
-    </div>
+    <!-- Floating Background Particles -->
     <div class="particles">
-        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
     </div>
 
-    <div id="cv-fr" class="french">
-        <div class="container">
-            <div class="cv">
-                <div class="left">
-                    <img src="profil_pic.jpg" alt="Profile Image">
+    <!-- Top Action Bar (Language Switcher & Print Button) -->
+    <header class="top-action-bar">
+        <button id="print-cv" class="action-btn btn-print" title="Imprimer ou enregistrer au format PDF">
+            <span>🖨️</span>
+            <span id="print-btn-text">Imprimer / PDF</span>
+        </button>
+        <button id="toggle-language" class="action-btn" title="Changer de langue">
+            <span id="lang-flag">🇬🇧</span>
+            <span id="current-language">Switch to English</span>
+        </button>
+    </header>
 
-                    <h3>Profile</h3>
-                    <div class="left-section">
-                        <p>🎂 <span id="age"></span> ans</p>
-                        <p>🎓 Étudiant en BTS SIO</p>
-                        <p>💻 Développeur Junior</p>
-                        <div class="github-link">
-                            <a href="https://github.com/Rajdi16">👨‍💻 GitHub</a>
+    <!-- ====================================================================
+         VERSION FRANÇAISE (DEFAULT)
+         ==================================================================== -->
+    <main id="cv-fr" class="french" role="main">
+        <div class="container">
+            <article class="cv-card">
+                <!-- Colonne Gauche (Profil, Contact, Compétences, Langues) -->
+                <aside class="cv-sidebar">
+                    <div class="avatar-wrapper">
+                        <div class="avatar-container">
+                            <div class="avatar-ring"></div>
+                            <img src="profil_pic.jpg" alt="Photo de profil de Rajdi MUCANJI" class="avatar-img">
+                        </div>
+                        <div class="status-badge">
+                            <span class="status-dot"></span>
+                            <span>En recherche active CDI / CDD</span>
                         </div>
                     </div>
-                    <h3>Contact</h3>
-                    <div class="left-section">
-                        <p>📞 07 80 64 34 12</p>
-                        <p>✉️ rajdimucanji16@gmail.com</p>
-                        <p>📍 54000 </p>
-                    </div>
-                    <h3>Langues Étrangères</h3>
-                    <div class="left-section">
-                        <p>Langue Anglais</p>
-                        <div class="progress-bar">
-                            <div style="width: 85%;"></div>
-                        </div>
-                        <p>Langue Albanais</p>
-                        <div class="progress-bar">
-                            <div style="width: 95%;"></div>
-                        </div>
-                    </div>
-                    <h3>Compétences</h3>
+
+                    <!-- Profil Rapide -->
                     <div>
-                        <p>💡 Résolution de problèmes</p>
-                        <p>💪 Travail d’équipe</p>
-                        <p>🚀 Curiosité et apprentissage</p>
-                        <p>⏳ Gestion du temps</p>
-                        <p>🧘 Adaptabilité</p>
-                        <p>📢 Communication</p>
-                        <p>✨ Créativité</p>
+                        <h3 class="sidebar-title"><span class="icon">👤</span>Profil</h3>
+                        <div class="contact-list">
+                            <div class="contact-item">
+                                <span class="contact-icon">🎂</span>
+                                <span><strong id="age-fr">23</strong> ans</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">🎓</span>
+                                <span><strong>Titulaire BTS SIO</strong> (SLAM)</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">💻</span>
+                                <span>Développeur Web & Logiciel</span>
+                            </div>
+                            <a href="https://github.com/Rajdi16" target="_blank" rel="noopener noreferrer"
+                                class="contact-item" title="Voir le profil GitHub">
+                                <span class="contact-icon">👨‍💻</span>
+                                <span>github.com/Rajdi16</span>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="right">
-                    <h2>Rajdi MUCANJI</h2>
 
-                    <h3>Formation</h3>
+                    <!-- Contact -->
+                    <div>
+                        <h3 class="sidebar-title"><span class="icon">📍</span>Contact</h3>
+                        <div class="contact-list">
+                            <a href="tel:+33780643412" class="contact-item" title="Appeler">
+                                <span class="contact-icon">📞</span>
+                                <span>07 80 64 34 12</span>
+                            </a>
+                            <a href="mailto:rajdimucanji16@gmail.com" class="contact-item" title="Envoyer un email">
+                                <span class="contact-icon">✉️</span>
+                                <span>rajdimucanji16@gmail.com</span>
+                            </a>
+                            <div class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <span>Nancy (54000) & Grand Est</span>
+                            </div>
+                        </div>
+                    </div>
 
-                    <p><strong>BTS SIO</strong> | 2024 – présent</p>
-                    <p>Le BTS SIO (Services Informatiques aux Organisations)
-                        forme en deux ans à la gestion des systèmes
-                        informatiques, des réseaux et au développement
-                        d'applications. Je suis spécialisé dans la filière SLAM (Solutions Logicielles et
-                        Applications
-                        Métier), où j’apprends à concevoir, développer et maintenir des applications informatiques
-                        adaptées
-                        aux besoins des entreprises. Je travaille principalement sur des langages comme JavaScript,
-                        PHP
-                        et
-                        Java ainsi que sur les bases de données et la gestion des systèmes d’information.</p>
+                    <!-- Stack Technique -->
+                    <div>
+                        <h3 class="sidebar-title"><span class="icon">⚡</span>Technologies</h3>
+                        <div class="tech-tag-group">
+                            <span class="tech-tag featured">JavaScript (ES6+)</span>
+                            <span class="tech-tag featured">PHP</span>
+                            <span class="tech-tag featured">Java</span>
+                            <span class="tech-tag featured">Python</span>
+                            <span class="tech-tag">Dart & Flutter</span>
+                            <span class="tech-tag">WordPress</span>
+                            <span class="tech-tag">SQL & MySQL</span>
+                            <span class="tech-tag">HTML5 / CSS3</span>
+                            <span class="tech-tag">Architecture MVC</span>
+                            <span class="tech-tag">Git & GitHub</span>
+                        </div>
+                    </div>
 
-                    <p><strong>Bac Pro Systèmes Numériques</strong> | 2021 –
-                        2024</p>
-                    <p>Le Bac Pro Systèmes Numériques est une formation
-                        professionnelle de trois ans qui prépare les élèves
-                        à intervenir dans les domaines des réseaux
-                        informatiques, des télécommunications et des objets
-                        connectés. Elle offre des compétences techniques pour
-                        installer, configurer et dépanner des systèmes
-                        numériques utilisés dans divers secteurs industriels et
-                        tertiaires.</p>
+                    <!-- Langues Étrangères -->
+                    <div>
+                        <h3 class="sidebar-title"><span class="icon">🌐</span>Langues Étrangères</h3>
+                        <div class="language-group">
+                            <div>
+                                <div class="lang-header">
+                                    <span class="lang-name">Albanais</span>
+                                    <span class="lang-level">Langue maternelle</span>
+                                </div>
+                                <div class="lang-progress-bar">
+                                    <div class="lang-progress-fill" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="lang-header">
+                                    <span class="lang-name">Anglais</span>
+                                    <span class="lang-level">B2 - Technique & Professionnel</span>
+                                </div>
+                                <div class="lang-progress-bar">
+                                    <div class="lang-progress-fill" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <h3>Expériences</h3>
+                    <!-- Soft Skills -->
+                    <div>
+                        <h3 class="sidebar-title"><span class="icon">✨</span>Qualités</h3>
+                        <div class="soft-skills-list">
+                            <div class="soft-skill-item">
+                                <span class="emoji">💡</span>
+                                <span>Résolution de problèmes & esprit logique</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <span class="emoji">🤝</span>
+                                <span>Travail d’équipe & communication</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <span class="emoji">🚀</span>
+                                <span>Curiosité & veille technologique</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <span class="emoji">⏱️</span>
+                                <span>Rigueur & gestion du temps</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <span class="emoji">🧘</span>
+                                <span>Adaptabilité & autonomie</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
 
-                    <p><strong>AS Golf Aingeray</strong> | as-golf-aingeray.fr</p>
-                    <p>Automatisation de la gestion et de l'inscription aux tournois de golf sous WordPress. Développement de scripts sur mesure via l'extension Snippets (PHP) pour optimiser les processus du club.</p>
+                <!-- Colonne Droite (En-tête, Formation, Expériences, Projets, Certifications, Objectif) -->
+                <section class="cv-main">
+                    <!-- En-tête -->
+                    <header class="main-header">
+                        <div class="header-top">
+                            <div>
+                                <h1 class="applicant-name">Rajdi MUCANJI</h1>
+                                <p class="applicant-title">Développeur Web & Logiciel Junior</p>
+                            </div>
+                        </div>
+                        <div class="degree-tag">
+                            <span>🎓</span>
+                            <span>Titulaire du BTS SIO SLAM (Promo 2024 – 2026)</span>
+                        </div>
+                    </header>
 
-                    <p><strong>ACM Marketing Solutions</strong></p>
-                    <p>Analyse de projets IA (Lovable), intégration de QZ Tray pour les tickets de caisse, et mise en place d'un serveur d'impression Windows local.</p>
+                    <!-- Pitch / Résumé Professionnel -->
+                    <div class="profile-pitch">
+                        <strong>Titulaire du BTS SIO option SLAM</strong> (Solutions Logicielles et Applications
+                        Métier),
+                        je conçois et développe des applications web et logicielles fiables, performantes et centrées
+                        sur les besoins utilisateurs.
+                        Fort de plusieurs expériences concrètes (automatisation de plateformes sous WordPress,
+                        intégration de solutions d'impression matérielle et développement mobile cross-platform),
+                        je suis à la recherche d'une opportunité professionnelle en <strong>CDI ou CDD</strong> en tant
+                        que <strong>Développeur Web & Logiciel</strong>.
+                    </div>
 
-                    <p><strong>Stage de lycée</strong> | 2021 – 2023</p>
-                    <p>9 semaines - Mobil Luxembourg - développement d'application
-                        portable en Dart et Flutter</p>
+                    <!-- Formation -->
+                    <div class="main-section">
+                        <h2 class="section-title"><span class="section-icon">🎓</span>Formation</h2>
+                        <div class="timeline">
+                            <div class="timeline-item active">
+                                <span class="timeline-dot"></span>
+                                <div class="item-header">
+                                    <div class="item-title">
+                                        <span>BTS SIO (SLAM)</span>
+                                        <span class="item-badge badge-success">Diplômé</span>
+                                    </div>
+                                    <span class="item-date">2024 – 2026</span>
+                                </div>
+                                <div class="item-subtitle">Services Informatiques aux Organisations — Option Solutions
+                                    Logicielles et Applications Métier</div>
+                                <p class="item-desc">
+                                    Formation intensive de deux ans formant à la conception, au développement, au test
+                                    et à la maintenance d'applications informatiques d'entreprise.
+                                    Maîtrise approfondie des langages de programmation (JavaScript, PHP, Java), de la
+                                    modélisation et gestion de bases de données relationnelles (SQL, MySQL),
+                                    de l'architecture applicative MVC, de l'intégration d'API et de la sécurité des
+                                    données.
+                                </p>
+                            </div>
 
-                    <p><strong>Stage de lycée</strong> | 2022 – 2024</p>
-                    <p>11 semaines - <a href="https://www.evopc.fr">Evo PC Nancy</a> - Vente de matériel
-                        informatique, assemblage de PC, dépannage et
-                        assistance à distance.</p>
-                    <p><strong>Voici mes activités :</strong> J'ai participé à la vente d'ordinateurs, de composants
-                        et
-                        d’accessoires informatiques, tout en conseillant les clients sur le matériel le plus adapté
-                        à
-                        leurs
-                        besoins. J’ai également contribué à l’assemblage de PC sur mesure, aussi bien pour le gaming
-                        que
-                        pour la bureautique. Mon rôle comprenait aussi le diagnostic et la réparation de matériel
-                        informatique, ainsi que l’installation et l’optimisation des systèmes et logiciels.</p>
+                            <div class="timeline-item">
+                                <span class="timeline-dot"></span>
+                                <div class="item-header">
+                                    <div class="item-title">
+                                        <span>Bac Pro Systèmes Numériques (RISC)</span>
+                                        <span class="item-badge badge-muted">Diplômé</span>
+                                    </div>
+                                    <span class="item-date">2021 – 2024</span>
+                                </div>
+                                <div class="item-subtitle">Option Réseaux Informatiques et Systèmes Communicants</div>
+                                <p class="item-desc">
+                                    Formation professionnelle de 3 ans axée sur l'installation, la configuration, la
+                                    sécurisation et le dépannage de réseaux informatiques,
+                                    des télécommunications et d'équipements numériques industriels et tertiaires.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-                    <h3>Projets</h3>
-                    <p><strong>Stage Période 1 : Borne</strong> | Conception et développement d'une borne interactive pour répondre aux besoins matériels et logiciels de l'organisation.</p>
-                    <p><strong>Stage Période 2 : Tournois Golf</strong> | Automatisation de la gestion et de l'inscription aux tournois de golf via WordPress (Scripts PHP Snippets) pour AS Golf Aingeray.</p>
-                    <p><strong>Challenge 1 : TCG CHAT</strong> | Création d'une application de messagerie dédiée aux joueurs de jeux de cartes à collectionner (TCG).</p>
-                    <p><strong>Challenge 2 : VR Forest</strong> | Projet de réalité virtuelle collaboratif : modélisation et développement d'un environnement interactif forestier en 3D.</p>
-                    <p><strong>Agora Web & Mobile</strong> | Plateforme web et mobile sécurisée (MVC, Guards, Logout) pour la gestion de services.</p>
-                    <p><strong>AnimusOS AC Fanbase</strong> | Plateforme communautaire et système d'articles pour l'univers d'Assassin's Creed (Seeders/DB).</p>
-                    <p><strong>Tech-News-Central</strong> | Plateforme de veille technologique avec actualités du secteur informatique.</p>
-                    <p><strong>Music Player & Wallpaper Changer</strong> | Applications mobiles développées avec Dart et Flutter (Lecteur audio et gestionnaire de fonds d'écran dynamiques).</p>
+                    <!-- Expériences Professionnelles -->
+                    <div class="main-section">
+                        <h2 class="section-title"><span class="section-icon">💼</span>Expériences Professionnelles</h2>
+                        <div class="timeline">
+                            <div class="timeline-item active">
+                                <span class="timeline-dot"></span>
+                                <div class="item-header">
+                                    <div class="item-title">
+                                        <span>AS Golf Aingeray</span>
+                                        <span class="item-badge badge-primary">Stage BTS SIO</span>
+                                    </div>
+                                    <span class="item-date">2025 – 2026</span>
+                                </div>
+                                <div class="item-subtitle"><a href="https://as-golf-aingeray.fr" target="_blank"
+                                        rel="noopener noreferrer">as-golf-aingeray.fr</a> — Développeur Web &
+                                    Automatisation</div>
+                                <p class="item-desc">
+                                    Automatisation complète de la gestion et de l'inscription en ligne aux tournois de
+                                    golf sous WordPress.
+                                    Conception et intégration de scripts personnalisés en PHP (via l'extension Snippets)
+                                    pour optimiser les processus opérationnels du club et fiabiliser la gestion des
+                                    membres.
+                                </p>
+                            </div>
 
-                    <h3>Certifications</h3>
-                    <p><strong>Cisco Networking Academy</strong> | Fondamentaux réseaux et sécurité IoT.</p>
-                    <p><strong>L'Atelier RGPD - CNIL</strong> | Maîtrise du Règlement Général sur la Protection des Données.</p>
-                    <p><strong>Certification PIX</strong> | Maîtrise globale des compétences numériques.</p>
+                            <div class="timeline-item active">
+                                <span class="timeline-dot"></span>
+                                <div class="item-header">
+                                    <div class="item-title">
+                                        <span>ACM Marketing Solutions</span>
+                                        <span class="item-badge badge-primary">Stage BTS SIO</span>
+                                    </div>
+                                    <span class="item-date">2025</span>
+                                </div>
+                                <div class="item-subtitle">Développeur Solutions & Intégration</div>
+                                <p class="item-desc">
+                                    Étude et analyse technique de projets intégrant l'intelligence artificielle
+                                    (Lovable).
+                                    Automatisation de l'impression directe des tickets de caisse et déploiement
+                                    d'un serveur d'impression Windows en environnement local.
+                                </p>
+                            </div>
 
-                    <h3>Objectif Professionnel</h3>
-                    <p>En tant que développeur, mon objectif est de
-                        perfectionner mes compétences techniques en
-                        travaillant
-                        sur des projets innovants et stimulants. Je vise à
-                        acquérir une expertise solide dans le développement
-                        d'applications et à contribuer à des initiatives
-                        open-source, ce qui me permettra de renforcer mon
-                        portfolio et d'évoluer dans ma carrière.</p>
+                            <div class="timeline-item">
+                                <span class="timeline-dot"></span>
+                                <div class="item-header">
+                                    <div class="item-title">
+                                        <span>Evo PC Nancy</span>
+                                        <span class="item-badge badge-muted">Stages Bac Pro • 11 sem.</span>
+                                    </div>
+                                    <span class="item-date">2022 – 2024</span>
+                                </div>
+                                <div class="item-subtitle"><a href="https://www.evopc.fr" target="_blank"
+                                        rel="noopener noreferrer">evopc.fr</a> — Support Technique & Assemblage PC</div>
+                                <p class="item-desc">
+                                    Conseil client et vente de composants informatiques adaptés. Assemblage de stations
+                                    de travail bureautiques et gaming sur mesure.
+                                    Diagnostic hardware/software, réparation de pannes, réinstallation système et
+                                    assistance utilisateur à distance.
+                                </p>
+                            </div>
 
-                    <h3>Objectif Personnel</h3>
-                    <p>Sur le plan personnel, je souhaite avoir la
-                        possibilité
-                        de voyager pour explorer différentes cultures et
-                        découvrir de nouveaux lieux. Ces expériences
-                        enrichissantes me permettront d'élargir ma
-                        perspective et d'inspirer ma créativité, tant dans ma vie
-                        professionnelle que personnelle.</p>
-                </div>
-            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-dot"></span>
+                                <div class="item-header">
+                                    <div class="item-title">
+                                        <span>Mobil Luxembourg</span>
+                                        <span class="item-badge badge-muted">Stage Bac Pro • 9 sem.</span>
+                                    </div>
+                                    <span class="item-date">2021 – 2023</span>
+                                </div>
+                                <div class="item-subtitle">Développeur Mobile Junior</div>
+                                <p class="item-desc">
+                                    Développement d'applications mobiles cross-platform en Dart et Flutter. Conception
+                                    d'interfaces réactives et gestion de la logique applicative.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projets Réalisés -->
+                    <div class="main-section">
+                        <h2 class="section-title"><span class="section-icon">🚀</span>Projets Réalisés</h2>
+                        <div class="projects-grid">
+                            <div class="project-card">
+                                <div>
+                                    <div class="project-card-header">
+                                        <h3 class="project-title">Borne Interactive</h3>
+                                        <span class="project-badge">Stage Période 1</span>
+                                    </div>
+                                    <p class="project-desc">Conception matérielle et logicielle d'une borne tactile
+                                        interactive répondant aux besoins d'accueil et d'orientation d'une structure.
+                                    </p>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag-pill">Système</span>
+                                    <span class="tag-pill">UI/UX</span>
+                                    <span class="tag-pill">Matériel</span>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div>
+                                    <div class="project-card-header">
+                                        <h3 class="project-title">Tournois Golf</h3>
+                                        <span class="project-badge">Stage Période 2</span>
+                                    </div>
+                                    <p class="project-desc">Système d'inscription et gestion automatisée des tournois de
+                                        golf sur WordPress via des scripts PHP sur-mesure pour AS Golf Aingeray.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag-pill">WordPress</span>
+                                    <span class="tag-pill">PHP</span>
+                                    <span class="tag-pill">Automatisation</span>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div>
+                                    <div class="project-card-header">
+                                        <h3 class="project-title">Agora Web & Mobile</h3>
+                                        <span class="project-badge">Application Métier</span>
+                                    </div>
+                                    <p class="project-desc">Plateforme web et mobile sécurisée de gestion de services
+                                        avec architecture MVC, routes protégées (Guards) et session/déconnexion.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag-pill">MVC</span>
+                                    <span class="tag-pill">Sécurité</span>
+                                    <span class="tag-pill">Web & Mobile</span>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div>
+                                    <div class="project-card-header">
+                                        <h3 class="project-title">TCG CHAT</h3>
+                                        <span class="project-badge">Challenge Web</span>
+                                    </div>
+                                    <p class="project-desc">Application de messagerie instantanée en temps réel conçue
+                                        sur mesure pour les joueurs de jeux de cartes à collectionner.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag-pill">JavaScript</span>
+                                    <span class="tag-pill">Temps réel</span>
+                                    <span class="tag-pill">Messaging</span>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div>
+                                    <div class="project-card-header">
+                                        <h3 class="project-title">VR Forest</h3>
+                                        <span class="project-badge">Projet VR</span>
+                                    </div>
+                                    <p class="project-desc">Expérience immersive en Réalité Virtuelle : modélisation et
+                                        développement d'un environnement forestier 3D interactif.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag-pill">Réalité Virtuelle</span>
+                                    <span class="tag-pill">3D</span>
+                                    <span class="tag-pill">Immersion</span>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div>
+                                    <div class="project-card-header">
+                                        <h3 class="project-title">AnimusOS AC Fanbase</h3>
+                                        <span class="project-badge">Communauté</span>
+                                    </div>
+                                    <p class="project-desc">Plateforme communautaire dédiée à Assassin's Creed avec
+                                        système de publication d'articles, base relationnelle et seeders.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag-pill">Base de données</span>
+                                    <span class="tag-pill">Seeders</span>
+                                    <span class="tag-pill">Web</span>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div>
+                                    <div class="project-card-header">
+                                        <h3 class="project-title">Tech-News-Central</h3>
+                                        <span class="project-badge">Veille IT</span>
+                                    </div>
+                                    <p class="project-desc">Plateforme de veille technologique automatisée regroupant et
+                                        organisant les actualités informatiques et tendances du secteur.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag-pill">Veille Techno</span>
+                                    <span class="tag-pill">Flux API</span>
+                                    <span class="tag-pill">Agrégation</span>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div>
+                                    <div class="project-card-header">
+                                        <h3 class="project-title">Music Player & Wallpaper</h3>
+                                        <span class="project-badge">Mobile Flutter</span>
+                                    </div>
+                                    <p class="project-desc">Deux applications mobiles cross-platform : un lecteur audio
+                                        local intuitif et un gestionnaire dynamique de fonds d'écran.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag-pill">Flutter</span>
+                                    <span class="tag-pill">Dart</span>
+                                    <span class="tag-pill">Cross-Platform</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications -->
+                    <div class="main-section">
+                        <h2 class="section-title"><span class="section-icon">🏅</span>Certifications Officielles</h2>
+                        <div class="cert-cards-group">
+                            <a href="https://www.freecodecamp.org/learn/python-v9/exam-python-certification/exam-python-certification" target="_blank" rel="noopener noreferrer" class="cert-card" title="Voir la certification Python freeCodeCamp">
+                                <span class="cert-icon">🐍</span>
+                                <h3 class="cert-title">Python Certification</h3>
+                                <span class="cert-org">freeCodeCamp</span>
+                                <p class="cert-desc">Structures de données, algorithmique et programmation orientée objet en Python.</p>
+                            </a>
+                            <a href="https://www.freecodecamp.org" target="_blank" rel="noopener noreferrer" class="cert-card" title="Voir la certification Responsive Web Design freeCodeCamp">
+                                <span class="cert-icon">💻</span>
+                                <h3 class="cert-title">Responsive Web Design</h3>
+                                <span class="cert-org">freeCodeCamp</span>
+                                <p class="cert-desc">HTML5 sémantique, CSS3 avancé, Flexbox, Grid et conception d'interfaces adaptatives.</p>
+                            </a>
+                            <div class="cert-card">
+                                <span class="cert-icon">🛡️</span>
+                                <h3 class="cert-title">Cisco Networking Academy</h3>
+                                <span class="cert-org">Cisco</span>
+                                <p class="cert-desc">Fondamentaux des réseaux, architecture IP et principes de sécurité IoT.</p>
+                            </div>
+                            <div class="cert-card">
+                                <span class="cert-icon">⚖️</span>
+                                <h3 class="cert-title">L'Atelier RGPD</h3>
+                                <span class="cert-org">CNIL</span>
+                                <p class="cert-desc">Maîtrise du Règlement Général sur la Protection des Données et conformité logicielle.</p>
+                            </div>
+                            <div class="cert-card">
+                                <span class="cert-icon">🏅</span>
+                                <h3 class="cert-title">Certification PIX</h3>
+                                <span class="cert-org">République Française</span>
+                                <p class="cert-desc">Validation officielle et reconnue des compétences numériques et informationnelles.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Objectif & Ambition -->
+                    <div class="main-section">
+                        <h2 class="section-title"><span class="section-icon">🎯</span>Objectif Professionnel</h2>
+                        <div class="objective-box">
+                            En tant que développeur junior passionné par les architectures modernes et le code propre,
+                            mon objectif est de mettre mon énergie et mes compétences au service d'entreprises
+                            innovantes.
+                            Je souhaite contribuer à des projets d'envergure, participer à l'écosystème open-source et
+                            progresser continuellement
+                            aux côtés de développeurs expérimentés.
+                        </div>
+                    </div>
+                </section>
+            </article>
         </div>
-    </div>
+    </main>
 
-    <div id="cv-en" class="english">
+    <!-- ====================================================================
+         ENGLISH VERSION
+         ==================================================================== -->
+    <main id="cv-en" class="english" role="main">
         <div class="container">
-            <div class="cv">
-                <div class="left">
-                    <img src="profil_pic.jpg" alt="Profile Image">
-
-                    <h3>Profile</h3>
-                    <div class="left-section">
-                        <p>🎂 <span id="age"></span>21 years old</p>
-                        <p>🎓 Student in BTS SIO</p>
-                        <p>💻 Junior Developer</p>
-                        <div class="github-link">
-                            <a href="https://github.com/Rajdi16">👨‍💻 GitHub</a>
+            <article class="cv-card">
+                <!-- Left Sidebar (Profile, Contact, Tech Stack, Languages) -->
+                <aside class="cv-sidebar">
+                    <div class="avatar-wrapper">
+                        <div class="avatar-container">
+                            <div class="avatar-ring"></div>
+                            <img src="profil_pic.jpg" alt="Rajdi MUCANJI profile picture" class="avatar-img">
+                        </div>
+                        <div class="status-badge">
+                            <span class="status-dot"></span>
+                            <span>Open to Work (Full-time / Fixed-term)</span>
                         </div>
                     </div>
-                    <h3>Contact</h3>
-                    <div class="left-section">
-                        <p>📞 07 80 64 34 12</p>
-                        <p>✉️ rajdimucanji16@gmail.com</p>
-                        <p>📍 54220 Malzéville</p>
+
+                    <!-- Quick Profile -->
+                    <div>
+                        <h3 class="sidebar-title"><span class="icon">👤</span>Profile</h3>
+                        <div class="contact-list">
+                            <div class="contact-item">
+                                <span class="contact-icon">🎂</span>
+                                <span><strong id="age-en">23</strong> years old</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">🎓</span>
+                                <span><strong>BTS SIO Graduate</strong> (SLAM)</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">💻</span>
+                                <span>Junior Web & Software Dev</span>
+                            </div>
+                            <a href="https://github.com/Rajdi16" target="_blank" rel="noopener noreferrer"
+                                class="contact-item" title="View GitHub Profile">
+                                <span class="contact-icon">👨‍💻</span>
+                                <span>github.com/Rajdi16</span>
+                            </a>
+                        </div>
                     </div>
-                    <h3>Foreign Languages</h3>
-                    <div class="left-section">
 
-                        <p>Langue Albanais</p>
-                        <div class="progress-bar">
-                            <div style="width: 95%;"></div>
+                    <!-- Contact -->
+                    <div>
+                        <h3 class="sidebar-title"><span class="icon">📍</span>Contact</h3>
+                        <div class="contact-list">
+                            <a href="tel:+33780643412" class="contact-item" title="Call">
+                                <span class="contact-icon">📞</span>
+                                <span>+33 7 80 64 34 12</span>
+                            </a>
+                            <a href="mailto:rajdimucanji16@gmail.com" class="contact-item" title="Send email">
+                                <span class="contact-icon">✉️</span>
+                                <span>rajdimucanji16@gmail.com</span>
+                            </a>
+                            <div class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <span>Nancy (54000), France</span>
+                            </div>
                         </div>
-                        <p>Langue Francais</p>
-                        <div class="progress-bar">
-                            <div style="width: 80%;"></div>
-                        </div>
-                        <p>Langue Grec</p>
-                        <div class="progress-bar">
-                            <div style="width: 13%;"></div>
-                        </div>
-
-                        <h3>Skills</h3>
-                        <p>💡 Problem-solving</p>
-                        <p>💪 Teamwork</p>
-                        <p>🚀 Curiosity and continuous learning</p>
-                        <p>⏳ Time management</p>
-                        <p>🧘 Adaptability</p>
-                        <p>📢 Communication</p>
-                        <p>✨ Creativity</p>
                     </div>
-                </div>
-                <div class="right">
-                    <h2>Rajdi MUCANJI</h2>
 
-                    <h3>Education</h3>
+                    <!-- Tech Stack -->
+                    <div>
+                        <h3 class="sidebar-title"><span class="icon">⚡</span>Technologies</h3>
+                        <div class="tech-tag-group">
+                            <span class="tech-tag featured">JavaScript (ES6+)</span>
+                            <span class="tech-tag featured">PHP</span>
+                            <span class="tech-tag featured">Java</span>
+                            <span class="tech-tag featured">Python</span>
+                            <span class="tech-tag">Dart & Flutter</span>
+                            <span class="tech-tag">WordPress</span>
+                            <span class="tech-tag">SQL & MySQL</span>
+                            <span class="tech-tag">HTML5 / CSS3</span>
+                            <span class="tech-tag">MVC Architecture</span>
+                            <span class="tech-tag">Git & GitHub</span>
+                        </div>
+                    </div>
 
-                    <p><strong>BTS SIO</strong> | 2024 – present</p>
-                    <p>The BTS SIO (Services Informatiques aux Organisations) is a two-year program focused on
-                        managing IT systems, networks, and application development. I specialize in the SLAM
-                        (Software Solutions and Business Applications) track, where I learn to design, develop,
-                        and maintain software applications tailored to business needs. My work primarily
-                        involves programming languages such as JavaScript, PHP, and Java, as well as databases
-                        and information system management.</p>
+                    <!-- Foreign Languages -->
+                    <div>
+                        <h3 class="sidebar-title"><span class="icon">🌐</span>Foreign Languages</h3>
+                        <div class="language-group">
+                            <div>
+                                <div class="lang-header">
+                                    <span class="lang-name">Albanian</span>
+                                    <span class="lang-level">Native language</span>
+                                </div>
+                                <div class="lang-progress-bar">
+                                    <div class="lang-progress-fill" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="lang-header">
+                                    <span class="lang-name">English</span>
+                                    <span class="lang-level">B2 - Professional & Technical</span>
+                                </div>
+                                <div class="lang-progress-bar">
+                                    <div class="lang-progress-fill" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <p><strong>Professional Baccalaureate in Digital Systems</strong> | 2021 – 2024</p>
+                    <!-- Soft Skills -->
+                    <div>
+                        <h3 class="sidebar-title"><span class="icon">✨</span>Key Strengths</h3>
+                        <div class="soft-skills-list">
+                            <div class="soft-skill-item">
+                                <span class="emoji">💡</span>
+                                <span>Problem-solving & analytical mindset</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <span class="emoji">🤝</span>
+                                <span>Team player & communication</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <span class="emoji">🚀</span>
+                                <span>Curiosity & active tech watch</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <span class="emoji">⏱️</span>
+                                <span>Time management & thoroughness</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <span class="emoji">🧘</span>
+                                <span>Adaptability & fast learner</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
 
-                    <p>The "Bac Pro Systèmes Numériques" is a three-year vocational training program that
-                        prepares students to work in the fields of "IT networks, telecommunications, and
-                        connected devices". It provides technical skills to "install, configure, and
-                        troubleshoot digital systems" used in various industrial and service sectors.</p>
+                <!-- Right Main Column -->
+                <section class="cv-main">
+                    <!-- Header -->
+                    <header class="main-header">
+                        <div class="header-top">
+                            <div>
+                                <h1 class="applicant-name">Rajdi MUCANJI</h1>
+                                <p class="applicant-title">Junior Web & Software Developer</p>
+                            </div>
+                        </div>
+                        <div class="degree-tag">
+                            <span>🎓</span>
+                            <span>BTS SIO Graduate - SLAM Track (Class of 2024 – 2026)</span>
+                        </div>
+                    </header>
 
-                    <h3>Experiences</h3>
+                    <!-- Pitch / Professional Summary -->
+                    <div class="profile-pitch">
+                        <strong>Graduate with a BTS SIO (Software Solutions & Business Applications track)</strong>,
+                        I specialize in building reliable, efficient, and user-centric web and software applications.
+                        With hands-on experience in WordPress automation, enterprise hardware/software printing
+                        integrations, and mobile development with Flutter,
+                        I am actively seeking an opportunity as a <strong>Junior Web & Software Developer (Full-time /
+                            Contract)</strong>.
+                    </div>
 
-                    <p><strong>AS Golf Aingeray</strong> | as-golf-aingeray.fr</p>
-                    <p>Automation of golf tournament management and registration under WordPress. Development of custom scripts via the Snippets extension (PHP) to optimize club processes.</p>
+                    <!-- Education -->
+                    <div class="main-section">
+                        <h2 class="section-title"><span class="section-icon">🎓</span>Education</h2>
+                        <div class="timeline">
+                            <div class="timeline-item active">
+                                <span class="timeline-dot"></span>
+                                <div class="item-header">
+                                    <div class="item-title">
+                                        <span>BTS SIO (SLAM Option)</span>
+                                        <span class="item-badge badge-success">Graduated</span>
+                                    </div>
+                                    <span class="item-date">2024 – 2026</span>
+                                </div>
+                                <div class="item-subtitle">Associate Degree in Computer Science — Software Solutions and
+                                    Business Applications</div>
+                                <p class="item-desc">
+                                    Two-year intensive program focused on designing, developing, testing, and
+                                    maintaining organizational applications.
+                                    In-depth training in programming languages (JavaScript, PHP, Java), relational
+                                    database modeling and management (SQL, MySQL),
+                                    MVC architectures, API integration, and application security.
+                                </p>
+                            </div>
 
-                    <p><strong>ACM Marketing Solutions</strong></p>
-                    <p>AI project analysis (Lovable), QZ Tray integration for receipts, and local Windows print server setup.</p>
+                            <div class="timeline-item">
+                                <span class="timeline-dot"></span>
+                                <div class="item-header">
+                                    <div class="item-title">
+                                        <span>Vocational Baccalaureate in Digital Systems (RISC)</span>
+                                        <span class="item-badge badge-muted">Graduated</span>
+                                    </div>
+                                    <span class="item-date">2021 – 2024</span>
+                                </div>
+                                <div class="item-subtitle">Computer Networks and Communicating Systems</div>
+                                <p class="item-desc">
+                                    Three-year vocational diploma covering IT networking, telecommunications, connected
+                                    devices,
+                                    system deployment, diagnostics, and hardware/software troubleshooting.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-                    <p><strong>High School Internship </strong> | 2021 – 2023</p>
-                    <p>9 weeks - Mobil Luxembourg - Development of mobile applications using Dart and Flutter</p>
+                    <!-- Work Experiences -->
+                    <div class="main-section">
+                        <h2 class="section-title"><span class="section-icon">💼</span>Work Experiences</h2>
+                        <div class="timeline">
+                            <div class="timeline-item active">
+                                <span class="timeline-dot"></span>
+                                <div class="item-header">
+                                    <div class="item-title">
+                                        <span>AS Golf Aingeray</span>
+                                        <span class="item-badge badge-primary">BTS Internship</span>
+                                    </div>
+                                    <span class="item-date">2025 – 2026</span>
+                                </div>
+                                <div class="item-subtitle"><a href="https://as-golf-aingeray.fr" target="_blank"
+                                        rel="noopener noreferrer">as-golf-aingeray.fr</a> — Web Developer & Automation
+                                </div>
+                                <p class="item-desc">
+                                    Automated golf tournament management and online registration workflows under
+                                    WordPress.
+                                    Authored custom PHP snippet scripts to streamline club operations, improve data
+                                    reliability, and enhance the member registration experience.
+                                </p>
+                            </div>
 
-                    <h3>High School Internship | 2022 – 2024</h3>
+                            <div class="timeline-item active">
+                                <span class="timeline-dot"></span>
+                                <div class="item-header">
+                                    <div class="item-title">
+                                        <span>ACM Marketing Solutions</span>
+                                        <span class="item-badge badge-primary">BTS Internship</span>
+                                    </div>
+                                    <span class="item-date">2025</span>
+                                </div>
+                                <div class="item-subtitle">Solutions Developer & System Integration</div>
+                                <p class="item-desc">
+                                    Conducted technical analysis and prototyping on generative AI platforms (Lovable).
+                                    Automated direct receipt printing workflows and configured a local
+                                    Windows print server.
+                                </p>
+                            </div>
 
-                    11 weeks - <a href="http://www.evopc.fr">Evo PC Nancy </a> - Computer hardware sales, PC
-                    assembly,
-                    troubleshooting, and remote assistance.
+                            <div class="timeline-item">
+                                <span class="timeline-dot"></span>
+                                <div class="item-header">
+                                    <div class="item-title">
+                                        <span>Evo PC Nancy</span>
+                                        <span class="item-badge badge-muted">High School Internships • 11 wks</span>
+                                    </div>
+                                    <span class="item-date">2022 – 2024</span>
+                                </div>
+                                <div class="item-subtitle"><a href="https://www.evopc.fr" target="_blank"
+                                        rel="noopener noreferrer">evopc.fr</a> — Technical Support & Custom PC Assembly
+                                </div>
+                                <p class="item-desc">
+                                    Hardware component sales and customer consulting. Built custom workstations and
+                                    gaming rigs.
+                                    Hardware and software diagnostic troubleshooting, component repairs, OS
+                                    installations, and remote support.
+                                </p>
+                            </div>
 
-                    <h3>My activities</h3>
-                    <p> I participated in selling computers, components, and accessories while advising customers on
-                        the most suitable hardware for their needs. I also contributed to assembling custom PCs,
-                        both for gaming and office use. My role included diagnosing and repairing computer hardware,
-                        as well as installing and optimizing systems and software.
-                    </p>
+                            <div class="timeline-item">
+                                <span class="timeline-dot"></span>
+                                <div class="item-header">
+                                    <div class="item-title">
+                                        <span>Mobil Luxembourg</span>
+                                        <span class="item-badge badge-muted">High School Internship • 9 wks</span>
+                                    </div>
+                                    <span class="item-date">2021 – 2023</span>
+                                </div>
+                                <div class="item-subtitle">Junior Mobile Developer</div>
+                                <p class="item-desc">
+                                    Developed cross-platform mobile applications using Dart and Flutter. Designed
+                                    responsive UI layouts and implemented application logic.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-                    <h3>Projects</h3>
-                    <p><strong>Stage Period 1: Borne</strong> | Design and development of an interactive kiosk to meet the organization's hardware and software needs.</p>
-                    <p><strong>Stage Period 2: Golf Tournaments</strong> | Automation of golf tournament management and registration via WordPress (PHP Snippet scripts) for AS Golf Aingeray.</p>
-                    <p><strong>Challenge 1: TCG CHAT</strong> | Development of a messaging application dedicated to Trading Card Game (TCG) players.</p>
-                    <p><strong>Challenge 2: VR Forest</strong> | Collaborative VR project: modeling and developing a 3D interactive forest environment.</p>
-                    <p><strong>Agora Web & Mobile</strong> | Secure web and mobile platform (MVC, Guards, Logout) for service management.</p>
-                    <p><strong>AnimusOS AC Fanbase</strong> | Community platform and article system for the Assassin's Creed universe (Seeders/DB).</p>
-                    <p><strong>Tech-News-Central</strong> | Technology watch platform with IT industry news/articles.</p>
-                    <p><strong>Music Player & Wallpaper Changer</strong> | Mobile applications developed with Dart and Flutter (Audio player and dynamic wallpaper manager).</p>
+                    <!-- Projects -->
+                    <div class="main-section">
+                        <h2 class="section-title"><span class="section-icon">🚀</span>Featured Projects</h2>
+                        <div class="projects-grid">
+                            <div class="project-card">
+                                <div>
+                                    <div class="project-card-header">
+                                        <h3 class="project-title">Interactive Kiosk</h3>
+                                        <span class="project-badge">Stage Period 1</span>
+                                    </div>
+                                    <p class="project-desc">Hardware and software design of a touchscreen interactive
+                                        kiosk fulfilling visitor reception and orientation needs.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag-pill">System</span>
+                                    <span class="tag-pill">UI/UX</span>
+                                    <span class="tag-pill">Hardware</span>
+                                </div>
+                            </div>
 
-                    <h3>Certifications</h3>
-                    <p><strong>Cisco Networking Academy</strong> | IT networking fundamentals and IoT security.</p>
-                    <p><strong>L'Atelier RGPD - CNIL</strong> | Mastery of the General Data Protection Regulation (GDPR).</p>
-                    <p><strong>PIX Certification</strong> | Official certification of digital skills.</p>
-                    <h3> Professional Objective</h3>
-                    <p> As a developer, my goal is to refine my technical skills by working on innovative and
-                        challenging projects. I aim to gain solid expertise in application development and
-                        contribute to open-source initiatives, which will help me strengthen my portfolio and
-                        advance in my career.</p>
+                            <div class="project-card">
+                                <div>
+                                    <div class="project-card-header">
+                                        <h3 class="project-title">Golf Tournaments</h3>
+                                        <span class="project-badge">Stage Period 2</span>
+                                    </div>
+                                    <p class="project-desc">Automated tournament registration and admin system on
+                                        WordPress using tailored PHP scripts for AS Golf Aingeray.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag-pill">WordPress</span>
+                                    <span class="tag-pill">PHP</span>
+                                    <span class="tag-pill">Automation</span>
+                                </div>
+                            </div>
 
-                    <h3> Personal Objective</h3>
-                    <p> On a personal level, I aspire to travel and explore different cultures and places. These
-                        enriching experiences will broaden my perspective and inspire my creativity, both in my
-                        professional and personal life.
-                    </p>
-                </div>
-            </div>
+                            <div class="project-card">
+                                <div>
+                                    <div class="project-card-header">
+                                        <h3 class="project-title">Agora Web & Mobile</h3>
+                                        <span class="project-badge">Enterprise App</span>
+                                    </div>
+                                    <p class="project-desc">Secure web and mobile service management platform built on
+                                        MVC architecture with route guards and session control.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag-pill">MVC</span>
+                                    <span class="tag-pill">Security</span>
+                                    <span class="tag-pill">Web & Mobile</span>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div>
+                                    <div class="project-card-header">
+                                        <h3 class="project-title">TCG CHAT</h3>
+                                        <span class="project-badge">Web Challenge</span>
+                                    </div>
+                                    <p class="project-desc">Real-time instant messaging application tailored
+                                        specifically for Trading Card Game (TCG) players and collectors.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag-pill">JavaScript</span>
+                                    <span class="tag-pill">Real-time</span>
+                                    <span class="tag-pill">Messaging</span>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div>
+                                    <div class="project-card-header">
+                                        <h3 class="project-title">VR Forest</h3>
+                                        <span class="project-badge">VR Project</span>
+                                    </div>
+                                    <p class="project-desc">Immersive Virtual Reality experience: 3D environment
+                                        modeling and interactive forest simulation.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag-pill">Virtual Reality</span>
+                                    <span class="tag-pill">3D</span>
+                                    <span class="tag-pill">Immersive</span>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div>
+                                    <div class="project-card-header">
+                                        <h3 class="project-title">AnimusOS AC Fanbase</h3>
+                                        <span class="project-badge">Community</span>
+                                    </div>
+                                    <p class="project-desc">Community platform dedicated to the Assassin's Creed
+                                        universe with article publication system, relational DB, and seeders.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag-pill">Database</span>
+                                    <span class="tag-pill">Seeders</span>
+                                    <span class="tag-pill">Web</span>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div>
+                                    <div class="project-card-header">
+                                        <h3 class="project-title">Tech-News-Central</h3>
+                                        <span class="project-badge">Tech Watch</span>
+                                    </div>
+                                    <p class="project-desc">Automated technology watch platform aggregating and
+                                        categorizing current IT industry news and tech developments.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag-pill">Tech Watch</span>
+                                    <span class="tag-pill">API Feed</span>
+                                    <span class="tag-pill">Aggregator</span>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div>
+                                    <div class="project-card-header">
+                                        <h3 class="project-title">Music Player & Wallpaper</h3>
+                                        <span class="project-badge">Mobile Flutter</span>
+                                    </div>
+                                    <p class="project-desc">Two complete cross-platform mobile apps: a local offline
+                                        audio player and a dynamic interval-based wallpaper manager.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag-pill">Flutter</span>
+                                    <span class="tag-pill">Dart</span>
+                                    <span class="tag-pill">Cross-Platform</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications -->
+                    <div class="main-section">
+                        <h2 class="section-title"><span class="section-icon">🏅</span>Official Certifications</h2>
+                        <div class="cert-cards-group">
+                            <a href="https://www.freecodecamp.org/learn/python-v9/exam-python-certification/exam-python-certification" target="_blank" rel="noopener noreferrer" class="cert-card" title="View freeCodeCamp Python Certification">
+                                <span class="cert-icon">🐍</span>
+                                <h3 class="cert-title">Python Certification</h3>
+                                <span class="cert-org">freeCodeCamp</span>
+                                <p class="cert-desc">Data structures, algorithm design, and Object-Oriented Programming (OOP) in Python.</p>
+                            </a>
+                            <a href="https://www.freecodecamp.org" target="_blank" rel="noopener noreferrer" class="cert-card" title="View freeCodeCamp Responsive Web Design Certification">
+                                <span class="cert-icon">💻</span>
+                                <h3 class="cert-title">Responsive Web Design</h3>
+                                <span class="cert-org">freeCodeCamp</span>
+                                <p class="cert-desc">Semantic HTML5, advanced CSS3, Flexbox, CSS Grid, and responsive layout architecture.</p>
+                            </a>
+                            <div class="cert-card">
+                                <span class="cert-icon">🛡️</span>
+                                <h3 class="cert-title">Cisco Networking Academy</h3>
+                                <span class="cert-org">Cisco</span>
+                                <p class="cert-desc">Computer networking fundamentals, IP routing, and IoT security principles.</p>
+                            </div>
+                            <div class="cert-card">
+                                <span class="cert-icon">⚖️</span>
+                                <h3 class="cert-title">CNIL GDPR Workshop</h3>
+                                <span class="cert-org">CNIL</span>
+                                <p class="cert-desc">Mastery of General Data Protection Regulation (GDPR) and digital data compliance.</p>
+                            </div>
+                            <div class="cert-card">
+                                <span class="cert-icon">🏅</span>
+                                <h3 class="cert-title">PIX Certification</h3>
+                                <span class="cert-org">French Republic</span>
+                                <p class="cert-desc">Official and recognized certification of cross-functional digital and IT skills.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Professional Goal -->
+                    <div class="main-section">
+                        <h2 class="section-title"><span class="section-icon">🎯</span>Career Objective</h2>
+                        <div class="objective-box">
+                            As a junior developer passionate about clean architecture and dependable software
+                            engineering,
+                            my ambition is to bring my technical skills and enthusiasm to an innovative development
+                            team.
+                            I look forward to contributing to challenging digital projects, taking part in open-source
+                            initiatives,
+                            and continuously growing alongside experienced peers.
+                        </div>
+                    </div>
+                </section>
+            </article>
         </div>
-    </div>
+    </main>
 
+    <!-- JavaScript Logic -->
+    <script>
+        // Calculate age accurately from birth date
+        function calculateAge(birthDate) {
+            const today = new Date();
+            let age = today.getFullYear() - birthDate.getFullYear();
+            const monthDiff = today.getMonth() - birthDate.getMonth();
+            if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            }
+            return age;
+        }
+
+        // Initialize age display on load
+        window.addEventListener('DOMContentLoaded', () => {
+            const birthDate = new Date(2003, 4, 16); // May 2003
+            const age = calculateAge(birthDate);
+
+            const ageFr = document.getElementById("age-fr");
+            const ageEn = document.getElementById("age-en");
+
+            if (ageFr) ageFr.textContent = age;
+            if (ageEn) ageEn.textContent = age;
+        });
+
+        // Language toggle logic
+        const toggleBtn = document.getElementById("toggle-language");
+        const currentLangSpan = document.getElementById("current-language");
+        const langFlag = document.getElementById("lang-flag");
+        const printBtnText = document.getElementById("print-btn-text");
+        const cvFr = document.getElementById("cv-fr");
+        const cvEn = document.getElementById("cv-en");
+
+        let isEnglish = false;
+
+        toggleBtn.addEventListener("click", () => {
+            isEnglish = !isEnglish;
+
+            if (isEnglish) {
+                cvFr.style.display = "none";
+                cvEn.style.display = "block";
+                currentLangSpan.textContent = "Passer au Français";
+                langFlag.textContent = "🇫🇷";
+                printBtnText.textContent = "Print / PDF";
+                document.documentElement.lang = "en";
+            } else {
+                cvFr.style.display = "block";
+                cvEn.style.display = "none";
+                currentLangSpan.textContent = "Switch to English";
+                langFlag.textContent = "🇬🇧";
+                printBtnText.textContent = "Imprimer / PDF";
+                document.documentElement.lang = "fr";
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Print to PDF trigger
+        const printBtn = document.getElementById("print-cv");
+        printBtn.addEventListener("click", () => {
+            window.print();
+        });
+    </script>
 </body>
-
-<script>
-    function calculateAge(birthDate) {
-        const today = new Date();
-        let age = today.getFullYear() - birthDate.getFullYear();
-        const monthDifference = today.getMonth() - birthDate.getMonth();
-
-        if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
-            age--;
-        }
-
-        return age;
-    }
-
-    window.onload = function () {
-        const birthDate = new Date("2003-05"); // Ensure full date format
-        const ageElement = document.getElementById("age");
-
-        if (ageElement) {
-            ageElement.textContent = calculateAge(birthDate);
-        } else {
-            console.error("Element with ID 'age' not found.");
-        }
-    };
-
-    document.getElementById("toggle-language").addEventListener("click", function () {
-        var cvFr = document.getElementById("cv-fr");
-        var cvEn = document.getElementById("cv-en");
-
-        if (cvEn.style.display === "none") {
-            cvEn.style.display = "block";
-            cvFr.style.display = "none";
-            this.textContent = "Passer au Français";
-        } else {
-            cvEn.style.display = "none";
-            cvFr.style.display = "block";
-            this.textContent = "Switch to English";
-        }
-    });
-
-
-
-
-</script>
-
 
 </html>
